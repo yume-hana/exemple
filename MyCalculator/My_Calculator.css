@@ -1,0 +1,231 @@
+body{
+    background-color: #1E1E1E;
+}
+#fram{
+    background-color: #850E35;
+    height: 655px;
+    width: 422px;
+    border-radius: 46px;
+    border: 1px solid #FFDEDE;
+    position: relative; /* باش الـ absolute يتحدد حسب هذا */
+  padding-top: 0px;  /* باش نخلي بلاصة للعنوان من الفوق */
+    left: 50%;
+    transform: translate(-50%, 0%);
+}
+#box{
+    height: 92px;
+    width: 348px;
+    overflow: hidden; /* أو auto */
+    background-image: linear-gradient(to right ,#850E35 , #EE6983 ,#FFC4C4 ,#FFDEDE); 
+    border-radius: 20px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.34) inset ,0px 4px 8px rgba(0, 0, 0, 0.25);
+    padding-top: 9px; 
+    position: relative;
+    top: 102px;
+    left: 33px;
+}
+.image1{
+    height: 62px;
+    width: 64px;
+    position: absolute;
+  top: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.image2{
+    height: 70px;
+    width: 68px;
+    position: absolute;
+  top: 64px;
+  left: 7px;
+  transform: rotate(-35deg);
+  z-index: 10;
+}
+.image3{
+    height: 108px;
+    width: 96px;
+    position: absolute;
+  top: 40px;
+  right: 7px;
+  transform: rotate(30deg);
+  z-index: 10;
+}
+.image11{
+    height: 32px;
+    width: 31px;
+    position: absolute;
+  top: 5px;
+  left: 90px;
+  transform: rotate(-30deg);
+  z-index: 10;
+}
+.image111{
+    height: 32px;
+    width: 31px;
+    position: absolute;
+  top: 5px;
+  right: 93px;
+  transform: rotate(30deg);
+  z-index: 10;
+}
+.title{
+      position: absolute;
+  top: -16px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 24px;
+  font-family: 'Jeju Hallasan';
+  color: #ffffff;
+  z-index: 10;
+}
+.parent {
+    height: 200px;
+    width: 350px;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 15px;
+    position: relative;
+    top: 130px;
+}
+    
+.div1 {
+    grid-column: span 3 / span 3;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    gap: 20px;
+}
+
+.div2 {
+    grid-column: span 3 / span 3;
+    grid-row: span 4 / span 4;
+    grid-column-start: 1;
+    grid-row-start: 2;
+     display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.div3 {
+    grid-row: span 5 / span 5;
+    grid-column-start: 4;
+    grid-row-start: 1;
+    
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 30px;
+    margin-left: 10px;
+}
+        
+#tNUM{
+    font-size: 24px;
+    font-family: 'Jeju Hallasan';
+    color: #ffffff;
+    margin-left: 19px;
+    margin-top: 28px;
+    font-size: 40px;
+    font-family: 'Jeju Hallasan';
+    margin-left: -13px;
+    color: #EE6983;
+}
+.ACX{
+ height: 47px;
+    font-size: 32px;
+    font-family: 'Jeju Hallasan';
+    color: #ffffff;
+    background-color: rgba(250, 65, 101, 1);
+    border: none;
+    border-radius: 19px;
+    box-shadow: 7px 6px 4px rgba(255, 196, 196, 0.59)inset ,7px 4px 8px rgba(0, 0, 0, 0.33); 
+}
+.ACX:hover,
+.operator:hover,
+.operator1:hover,
+.designNUM:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+#b19{
+    width: 92px;
+    margin-left: -10px;
+}
+#b18{
+    width: 51px;
+}
+#b11{
+    width: 51px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.operator{
+     height: 53px;
+     width: 58px;
+    font-size: 32px;
+    font-family: 'Jeju Hallasan';
+    color: #ffffff;
+    background-color: rgba(238, 105, 131, 1);
+    border: none;
+    border-radius: 60px;
+    box-shadow: 7px 6px 4px rgba(255, 196, 196, 0.59)inset ,7px 4px 8px rgba(0, 0, 0, 0.33);
+}
+#b16{
+    margin-top: -2px;
+}
+.operator1{
+   height: 68px;
+     width: 70px;
+     margin-top: -5px;
+    margin-left: -6px;
+    font-size: 32px;
+    font-family: 'Jeju Hallasan';
+    color: #ffffff;
+    background-color: rgba(238, 105, 131, 1);
+    border: none;
+    border-radius: 60px;
+    box-shadow: 7px 6px 4px rgba(255, 196, 196, 0.59)inset ,7px 4px 8px rgba(0, 0, 0, 0.33);
+}
+.designNUM{
+height: 65px;
+    width: 71px;
+    background-color: #FFC4C4;
+    border: none;
+    border-radius: 19px;
+    box-shadow: 7px 6px 4px #FFF5E4 inset ,7px 4px 8px rgba(0, 0, 0, 0.33);
+    padding-top: 9px;
+    position: relative;
+}
+#iIMG{
+    height: 38px;
+    width: 39px;
+    margin-top: -21px;
+    margin-left: 28px;
+}
+#tonton{
+    height: 62px;
+    width: 64px;
+}
+.hidden{
+    display: none;
+}
+.show{
+    display: block;
+  font-size: 24px;
+    font-family: 'Jeju Hallasan';
+    color: #ffffff;
+    margin-left: 19px;
+    margin-right: 19px;
+    margin-top: 28px;
+}
+#t{
+    font-size: 24px;
+    font-family: 'Jeju Hallasan';
+    color: #ffffff;
+    margin-left: 19px;
+    margin-top: 28px;
+}
